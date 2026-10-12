@@ -11,9 +11,8 @@ BuildSystem:	python
 BuildRequires:	python
 BuildRequires:	pkgconfig(python)
 BuildRequires:	python%{pyver}dist(pip)
-BuildRequires:	python%{pyver}dist(setuptools)
-BuildRequires:	python%{pyver}dist(setuptools-scm)
-BuildRequires:	python%{pyver}dist(wheel)
+BuildRequires:	python%{pyver}dist(hatchling)
+BuildRequires:	python%{pyver}dist(hatch-vcs)
 
 %description
 Tenacity is a general-purpose retrying library. It originates from a

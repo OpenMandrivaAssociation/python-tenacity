@@ -1,5 +1,5 @@
 Name:		python-tenacity
-Version:	9.1.4
+Version:	9.2.1
 Release:	1
 Summary:	Retry library for Python
 License:	Apache-2.0
@@ -18,6 +18,10 @@ BuildRequires:	python%{pyver}dist(wheel)
 %description
 Tenacity is a general-purpose retrying library. It originates from a
 fork of retrying and adds new functionality and bug fixes.
+
+%build -p
+# The sdist is not a git checkout, so the versioning backend needs the version.
+export SETUPTOOLS_SCM_PRETEND_VERSION=%{version}
 
 %files
 %doc README.rst

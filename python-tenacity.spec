@@ -1,6 +1,6 @@
 Name:		python-tenacity
 Version:	9.2.1
-Release:	1
+Release:	2
 Summary:	Retry library for Python
 License:	Apache-2.0
 Group:		Development/Python
@@ -8,8 +8,8 @@ URL:		https://github.com/jd/tenacity
 Source0:	https://files.pythonhosted.org/packages/source/t/tenacity/tenacity-%{version}.tar.gz
 BuildArch:	noarch
 BuildSystem:	python
-BuildRequires:	python
-BuildRequires:	pkgconfig(python)
+BuildRequires:	pkgconfig(python3)
+BuildRequires:	python%{pyver}dist(wheel)
 BuildRequires:	python%{pyver}dist(pip)
 BuildRequires:	python%{pyver}dist(hatchling)
 BuildRequires:	python%{pyver}dist(hatch-vcs)
